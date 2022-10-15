@@ -112,4 +112,4 @@ last_update=$(prep "$(date|awk '{print $4 }')")
 # Build data for post
 TEXT="Hostname = $hostname [$last_update] %0AUptime Server = $uptime %0ARam Free = $ram_free %0ADisk Available = $disk_available %0AConnections = $connections %0ACPU Load = $cpu_load"
 
-curl -s --data chat_id=$CHAT_ID --data text="$TEXT" 'https://api.telegram.org/bot'$BOT_TOKEN'/sendMessage'
+curl -s --data "text=$TEXT" --data "chat_id=$CHAT_ID" 'https://api.telegram.org/bot'$BOT_TOKEN'/sendMessage'
