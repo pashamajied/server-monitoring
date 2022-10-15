@@ -17,7 +17,7 @@ Be sure to edit the configuration options at the beginning of the script to matc
 4. Edit the configuration options at the beginning of the script to match your environment prior to executing.
 <pre>
 #telegram conf
-GROUP_ID=xxxxxxxxx
+CHAT_ID=xxxxxxxxx
 BOT_TOKEN=xxxxxxxxxx:xxxxxxxxxxxx-xxxxxxx-xxxxxxxxxxxxxx
 </pre>
 
